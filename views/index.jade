@@ -1,8 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Chat
+  div#messageArea
+  input#writeMessage
+  button#sendMessage
 
 block scripts
   script(src="/js/app.js")
