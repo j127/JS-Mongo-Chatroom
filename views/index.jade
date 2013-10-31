@@ -3,8 +3,9 @@ extends layout
 block content
   h1 Chat
   div#messageArea
-  input#writeMessage
-  button#sendMessage
+  form
+    input#writeMessage
+    button#sendMessage
 
 block scripts
   script(src="/js/app.js")
