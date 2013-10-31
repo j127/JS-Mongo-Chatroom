@@ -4,3 +4,4 @@
 bower.json
 bower_components
 db/
+.env
