@@ -13,7 +13,7 @@ $(document).ready(function() {
         e.preventDefault();
         var currentMessage = $('input').val();
         var messageString = '<span class="username">' + userName + ':</span> ' + currentMessage;
-        $('#messages').append(messageString + '<br>');
+        $('#messageArea').append(messageString + '<br>');
         $('input').val('');
         counter++;
 
