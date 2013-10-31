@@ -20,6 +20,8 @@ app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
+app.use(express.cookieParser());
+app.use(express.session({secret: '937rufsgrEWirjtt8GR38877s652FHb'}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
